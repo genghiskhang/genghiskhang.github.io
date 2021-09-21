@@ -1,0 +1,124 @@
+:root {
+    /*Navbar Colors*/
+    --navbarcolor:#222222;
+    --navbaractive:#444444;
+    --navbartext:#EEEEEE;
+
+    /*Color Scheme*/
+    --lightblue:#89D2DC;
+    --midblue:#6564DB;
+    --blue:#232ED1;
+    --navy:#101D42;
+    --black:#0D1317;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin:0px;
+    background-image:linear-gradient(to right, var(--navy), var(--blue), var(--navy));
+}
+
+.navbar {
+    display:inline-block;
+    width:100%;
+    min-width:100%;
+    background-color:var(--navbarcolor);
+    height:auto;
+}
+
+.navbar ul {
+    display:flex;
+    list-style:none;
+    padding:0px;
+    margin-right:200px;
+    margin-top:20px;
+    float:right;
+}
+
+.navbar a {
+    flex:2;
+    text-decoration:none;
+    color:var(--navbartext);
+    padding:25px;
+}
+
+.navbar a:hover {
+    background-color:var(--navbartext);
+    color:var(--navbarcolor);
+    transition:background-color 0.3s ease-in-out;
+}
+
+.navbar h1 {
+    font-size:30px;
+    display:inline-block;
+    color:var(--navbartext);
+    margin-left:200px;
+}
+
+.main {
+    background-color:white;
+    max-width:100%;
+    padding:20px;
+    margin-left:200px;
+    margin-right:200px;
+}
+
+.main h1 {
+    margin:0px;
+}
+
+.main p {
+    margin:0px;
+}
+
+.footer {
+    display:inline-block;
+    background-color:var(--navbarcolor);
+    color:var(--navbartext);
+    bottom:0px;
+    width:100%;
+    text-align:center;
+}
+
+.title {
+    margin-bottom:50px;
+    width:100%;
+}
+
+.member-row {
+    display:flex;
+    flex-wrap:wrap;
+    margin-top:40px;
+}
+
+.member-profile {
+    text-align:center;
+    flex:1;
+}
+
+.member-profile p {
+    margin-top:20px;
+}
+
+.avatar {
+    width:200px;
+    height:200px;
+    object-fit:cover;
+    border-radius:50%;
+}
+
+/*
+.parallax-img {
+    background-image:url("assets/parallax2.jpg");
+    min-height:1440px;
+    background-attachment:fixed;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+*/
+
+#active-page {
+    background-color:var(--navbaractive);
+    color:var(--navbartext);
+}
