@@ -1,7 +1,8 @@
 window.addEventListener("load", event => {
-    var image = document.querySelector('img');
-    var isLoaded = image.complete && image.naturalHeight !== 0;
-    if (!isLoaded) {
-        image.src = 'assets/default-avatar.jpg';
+    var images = document.images;
+    for (var i = 0; i < images; i++) {
+        if (!images[i].complete && images[i].naturalHeight == 0) {
+            images[i].src = 'assets/default-avatar.jpg';
+        }
     }
-});
+}); 
