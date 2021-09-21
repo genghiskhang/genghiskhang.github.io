@@ -4,4 +4,4 @@ window.onload = function() {
             document.images[i].src = 'assets/default-avatar.jpg';
         }
     }
-}); 
+}
