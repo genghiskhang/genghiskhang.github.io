@@ -41,10 +41,10 @@ body {
 }
 
 .navbar a {
-    font-size:15px;
+    font-size:20px;
     text-decoration:none;
     color:var(--navbartext);
-    padding:20px;
+    padding:25px;
     flex:2;
 }
 
@@ -55,13 +55,12 @@ body {
 }
 
 .navbar h1 {
-    display:inline-block;
+    display:flex;
+    align-items:center;
     font-size:30px;
     color:var(--navbartext);
     margin:0px;
     margin-left:200px;
-    margin-top:10px;
-    margin-bottom:10px;
     flex:1;
 }
 
