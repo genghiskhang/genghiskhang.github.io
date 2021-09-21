@@ -91,7 +91,7 @@ body {
 }
 
 .title {
-    margin-bottom:50px;
+    margin-bottom:30px;
     width:100%;
 }
 
@@ -110,23 +110,38 @@ body {
     margin-top:20px;
 }
 
-.avatar {
+.avatar img {
     width:200px;
     height:200px;
     object-fit:cover;
     border-radius:50%;
 }
 
-/*
-.parallax-img {
-    background-image:url("assets/parallax2.jpg");
-    min-height:1440px;
-    background-attachment:fixed;
-    background-position:center;
-    background-repeat:no-repeat;
-    background-size:cover;
+.sponsor {
+    display:flex;
+    gap:20px;
+    margin-bottom:30px;
 }
-*/
+
+.sponsor-logo {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.sponsor-logo img {
+    width:100px;
+    height:100px;
+    object-fit:cover;
+}
+
+.sponsor-text {
+
+}
+
+.sponsor-text h1 {
+    margin-bottom:8px;
+}
 
 #active-page {
     background-color:var(--navbaractive);
