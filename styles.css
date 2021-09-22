@@ -148,6 +148,7 @@ body {
 
 .sponsor-img-container {
     flex-basis:100%;
+    flex:1;
 }
 
 .sponsor-img-container img {
