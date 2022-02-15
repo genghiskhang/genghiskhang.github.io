@@ -1,0 +1,137 @@
+header {
+    display:flex;
+    margin:0px;
+    padding:0px;
+    /* flex-wrap:wrap; */
+    background-color:var(--navbarcolor);
+}
+
+header.shrink {
+    -webkit-transition: height 0.2s;
+    transition: height 0.2s;
+    height: 80px;
+    position: fixed;
+}
+
+#titlelink{
+    text-decoration:none;
+    margin-left:50px;
+}
+
+.title {
+    display:flex;
+    /* margin-left:50px; */
+}
+
+.teamname{
+    margin:20px;
+    margin-left:0px;
+}
+
+.teamname h1 {
+    font-family:Joy Multiplication;
+    font-size:60px;
+    color:white;
+    margin-top:20px;
+    margin-bottom:0px;
+}
+
+.teamname p {
+    font-family:Joy Multiplication;
+    font-size:30px;
+    color:white;
+    margin:0px;
+}
+
+.socials {
+    margin:0px;
+}
+
+.navbar {
+    margin:auto;
+    margin-right:100px;
+    /* margin-left:auto; */
+}
+
+.navbar ul {
+    display:flex;
+    /* justify-content:flex-end; */
+    /* flex:2; */
+    list-style:none;
+    padding:0px;
+    margin:0px;
+    /* margin-right:200px; */
+}
+
+.navbar li {
+    font-size:1vw;
+    font-family:Joy Multiplication;
+    /*display:flex
+    justify-content:center;
+    align-items:center; */
+}
+
+.navbar a {
+    font-family:Joy Multiplication;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--navbaractive);
+  width: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown p {
+    font-size:1vw;
+    color:white;
+    padding:15px;
+    margin:0px;
+}
+
+.dropdown p:hover {
+    background-color:#666666;
+    /* transition:background-color 0.3s ease-in-out; */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.navbar a {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size:1vw;
+    text-decoration:none;
+    color:var(--navbartext);
+    padding:15px;
+}
+
+.navbar a:hover {
+    background-color:#666666;
+    /* transition:background-color 0.3s ease-in-out; */
+}
+/* .teamname h1 {
+    display:flex;
+    align-items:center;
+    font-size:30px;
+    color:var(--navbartext);
+    margin:0px;
+    margin-left:200px;
+    flex:1;
+} */
+
+#logo {
+    margin:20px;
+    margin-left:0px;
+    margin-right:0px;
+    max-height:150px;
+}

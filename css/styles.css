@@ -1,0 +1,70 @@
+:root {
+    /*Navbar Colors*/
+    --navbarcolor:#222222;
+    --navbaractive:#444444;
+    --navbartext:#EEEEEE;
+
+    /*Color Scheme*/
+    --lightblue:#89D2DC;
+    --midblue:#6564DB;
+    --blue:#232ED1;
+    --navy:#101D42;
+    --black:#0D1317;
+}
+
+@font-face {
+    font-family: Neuterous;
+    src: url('../assets/fonts/neuterous.ttf');
+}
+
+@font-face {
+    font-family: Joy Multiplication;
+    src:url('../assets/fonts/joymultiplication.ttf');
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin:0px;
+    background-image:linear-gradient(to right, var(--navy), var(--blue), var(--navy));
+}
+
+.main {
+    background-color:white;
+    max-width:100%;
+    min-height:1000px;
+    padding:20px;
+}
+
+.main h1 {
+    margin:0px;
+}
+
+.main p {
+    margin:0px;
+}
+
+.center {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
+.parallax {
+  background-image: url("assets/global/standin.gif");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.spnsr-text h1 {
+    margin-bottom:30px;
+}
+
+#active-page {
+    background-color:var(--navbaractive);
+    color:var(--navbartext);
+}

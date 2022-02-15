@@ -1,0 +1,31 @@
+.member-row {
+    display:flex;
+    justify-content:space-evenly;
+    flex-wrap:wrap;
+    margin-top:40px;
+    margin-bottom:40px;
+}
+
+.member-profile {
+    text-align:center;
+    width:auto;
+    flex-grow:0;
+    max-width:auto;
+}
+
+.member-profile h2 {
+    background-color:var(--navy);
+    font-size:30px;
+    color:white;
+    margin:0px;
+    margin-top:10px;
+}
+
+.avatar {
+    max-height:300px;
+}
+
+.avatar img {
+    max-width:300px;
+    object-fit:cover;
+}
