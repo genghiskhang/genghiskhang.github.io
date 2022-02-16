@@ -4,7 +4,7 @@ function loadSponsors() {
     fetch('../assets/sponsors/spnsrs.txt').then(function(response) {
         return response.text();
     }).then(function(data) {
-        let sponsorList = data.split('\r\n');
+        let sponsorList = data.split('\n');
         for (var i = 0; i < sponsorList.length; i++) {
             if (i % 2 == 0) {
                 $('.spnsr-main > table > tbody').append(`<tr></tr>`);
