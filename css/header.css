@@ -1,16 +1,16 @@
 header {
+    position:fixed;
     display:flex;
+    width:100%;
     margin:0px;
     padding:0px;
+    z-index:1;
     /* flex-wrap:wrap; */
     background-color:var(--navbarcolor);
 }
 
-header.shrink {
-    -webkit-transition: height 0.2s;
-    transition: height 0.2s;
-    height: 80px;
-    position: fixed;
+#team-name, #team-number {
+    transition:0.2s;
 }
 
 #titlelink{
@@ -18,17 +18,17 @@ header.shrink {
     margin-left:50px;
 }
 
-.title {
+.team-group {
     display:flex;
     /* margin-left:50px; */
 }
 
-.teamname{
+.team{
     margin:20px;
     margin-left:0px;
 }
 
-.teamname h1 {
+.team h1 {
     font-family:Joy Multiplication;
     font-size:3vw;
     color:white;
@@ -36,7 +36,7 @@ header.shrink {
     margin-bottom:0px;
 }
 
-.teamname p {
+.team p {
     font-family:Joy Multiplication;
     font-size:2vw;
     color:white;
@@ -50,6 +50,7 @@ header.shrink {
 .navbar {
     margin:auto;
     margin-right:100px;
+    transition:0.2s;
     /* margin-left:auto; */
 }
 
@@ -131,4 +132,5 @@ header.shrink {
     margin-left:0px;
     margin-right:0px;
     max-height:150px;
+    transition:0.2s;
 }

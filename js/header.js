@@ -1,38 +1,18 @@
-const headerShrinkWidth = 1290;
-header = document.getElementsByTagName('header')[0];
+window.onscroll = scrollFunction;
 
-function shrinkHeader() {
-    if (document.documentElement.scrollTop > 50 || document.body.clientWidth <= headerShrinkWidth) {
-        header.className = 'shrink';
-    } else {
-        header.className = '';
-    }
+function scrollFunction() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    document.getElementById('logo').style.maxHeight = '75px';
+    document.getElementById('logo').style.margin = '10px 0px 10px 0px';
+    document.getElementById('team-name').style.fontSize = '2vw';
+    document.getElementById('team-name').style.marginTop = '0px';
+    document.getElementById('team-number').style.fontSize = '0vw';
+  }
+  else {
+    document.getElementById('logo').style.maxHeight = '150px';
+    document.getElementById('logo').style.margin = '20px 0px 20px 0px';
+    document.getElementById('team-name').style.fontSize = '3vw';
+    document.getElementById('team-name').style.marginTop = '20px';
+    document.getElementById('team-number').style.fontSize = '2vw';
+  }
 }
-
-// Shrink header on mobile and resized window
-body.onload = function () {
-    if (body.clientWidth <= headerShrinkWidth) {
-        header.className = 'shrink';
-    } else {
-        header.className = '';
-    }
-};
-body.onresize = function () {
-    if (body.clientWidth <= headerShrinkWidth) {
-        header.className = 'shrink';
-    } else {
-        header.className = '';
-    }
-
-    if (body.clientWidth > headerShrinkWidth) {
-        if (nav.className == 'open') {
-            body.style.overflow = null;
-        }
-    } else {
-        if (nav.className == 'open') {
-            body.style.overflow = 'hidden';
-        }
-    }
-};
-
-document.addEventListener('scroll', shrinkHeader);

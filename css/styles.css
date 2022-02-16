@@ -50,7 +50,6 @@ body {
     align-items:center;
 }
 
-
 .parallax {
   background-image: url("../assets/global/standin.gif");
   filter:grayscale(100%) brightness(30%);
