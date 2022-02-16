@@ -1,6 +1,6 @@
-.member-main {
+/* .member-main {
     padding-top:190px;
-    background-color:#404040;
+    background-color:var(--mainbackground);
 }
 
 .member-title {
@@ -11,7 +11,7 @@
     margin:0px;
     padding-top:50px;
     padding-bottom:50px;
-}
+} */
 
 .members {
     display:flex;

@@ -4,6 +4,8 @@
     --navbaractive:#444444;
     --navbartext:#EEEEEE;
 
+    --mainbackground:#404040;
+
     /*Color Scheme*/
     --lightblue:#89D2DC;
     --midblue:#6564DB;
@@ -29,11 +31,24 @@ body {
     /* background-image:linear-gradient(to right, var(--navy), var(--blue), var(--navy)); */
 }
 
-.main {
-    background-color:white;
+#main {
+    /* background-color:white;
     max-width:100%;
     min-height:1000px;
-    padding:0px;
+    padding:0px; */
+    padding-top:190px;
+    background-color:var(--mainbackground);
+    padding-bottom:50px;
+}
+
+#title {
+    font-family:Joy Multiplication;
+    color:white;
+    text-align:center;
+    font-size:70px;
+    margin:0px;
+    padding-top:50px;
+    padding-bottom:50px;
 }
 
 .main h1 {
