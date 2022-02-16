@@ -1,12 +1,29 @@
 .spnsr-main {
     padding-top:190px;
+    background-color:#404040;
 }
 
-.spnsr-main h1 {
+#spnsr-title {
+    font-family:Joy Multiplication;
+    color:white;
+    text-align:center;
+    font-size:70px;
     margin:0px;
+    padding-top:50px;
+    padding-bottom:50px;
 }
 
-.spnsr {
+.spnsrs {
+    width:100%;
+    height:100%;
+}
+
+/* .spnsr-img {
+    flex-basis:33%;
+    flex-grow:0;
+} */
+
+/* .spnsr {
     display:flex;
     gap:20px;
     margin-bottom:100px;
@@ -65,4 +82,4 @@
 
 .reverse {
     flex-direction:row-reverse;
-}
+} */
