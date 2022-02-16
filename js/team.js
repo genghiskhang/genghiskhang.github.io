@@ -4,7 +4,7 @@ function createAvatars() {
     fetch('../assets/member-avatars/members.txt').then(function(response) {
         return response.text();
     }).then(function(data) {
-        let memberList = data.split('\r\n');
+        let memberList = data.split('\n');
         for (var i = 0; i < memberList.length; i++) {
             console.log(memberList);
             $('.members').append('<div class="member-profile">' +
