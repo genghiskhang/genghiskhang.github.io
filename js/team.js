@@ -5,6 +5,7 @@ function createAvatars() {
         return response.text();
     }).then(function(data) {
         let memberList = data.split('\r\n');
+        console.log(memberList);
         for (var i = 0; i < memberList.length; i++) {
             $('.members').append('<div class="member-profile">' +
                                     '<img class="avatar" src="../assets/member-avatars/default-avatar.jpg">' +
