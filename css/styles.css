@@ -13,17 +13,17 @@
 }
 
 @font-face {
-    font-family: Neuterous;
-    src: url('../assets/fonts/neuterous.ttf');
+    font-family:Neuterous;
+    src:url('../assets/fonts/neuterous.ttf');
 }
 
 @font-face {
-    font-family: Joy Multiplication;
+    font-family:Joy Multiplication;
     src:url('../assets/fonts/joymultiplication.ttf');
 }
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family:'Lato', sans-serif;
     margin:0px;
 
     /* background-image:linear-gradient(to right, var(--navy), var(--blue), var(--navy)); */
