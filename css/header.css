@@ -30,7 +30,7 @@ header.shrink {
 
 .teamname h1 {
     font-family:Joy Multiplication;
-    font-size:60px;
+    font-size:3vw;
     color:white;
     margin-top:20px;
     margin-bottom:0px;
@@ -38,7 +38,7 @@ header.shrink {
 
 .teamname p {
     font-family:Joy Multiplication;
-    font-size:30px;
+    font-size:2vw;
     color:white;
     margin:0px;
 }
@@ -64,15 +64,11 @@ header.shrink {
 }
 
 .navbar li {
-    font-size:1vw;
     font-family:Joy Multiplication;
+    font-size:30px;
     /*display:flex
     justify-content:center;
     align-items:center; */
-}
-
-.navbar a {
-    font-family:Joy Multiplication;
 }
 
 .dropdown {
@@ -90,7 +86,7 @@ header.shrink {
 }
 
 .dropdown p {
-    font-size:1vw;
+    font-size:1.5vw;
     color:white;
     padding:15px;
     margin:0px;
@@ -106,10 +102,11 @@ header.shrink {
 }
 
 .navbar a {
+    font-family:Joy Multiplication;
     display:flex;
     align-items: center;
     justify-content: center;
-    font-size:1vw;
+    font-size:1.5vw;
     text-decoration:none;
     color:var(--navbartext);
     padding:15px;

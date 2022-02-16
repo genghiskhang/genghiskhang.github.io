@@ -25,7 +25,8 @@
 body {
     font-family: 'Lato', sans-serif;
     margin:0px;
-    background-image:linear-gradient(to right, var(--navy), var(--blue), var(--navy));
+
+    /* background-image:linear-gradient(to right, var(--navy), var(--blue), var(--navy)); */
 }
 
 .main {
@@ -51,14 +52,14 @@ body {
 
 
 .parallax {
-  background-image: url("assets/global/standin.gif");
+  background-image: url("../assets/global/standin.gif");
+  filter:grayscale(100%) brightness(30%);
   min-height: 500px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 
 .spnsr-text h1 {
     margin-bottom:30px;

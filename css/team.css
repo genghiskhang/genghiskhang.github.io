@@ -1,31 +1,69 @@
-.member-row {
+.member-main {
+    background-color:#404040;
+}
+
+.member-title {
+    font-family:Joy Multiplication;
+    color:white;
+    text-align:center;
+    font-size:70px;
+    margin:0px;
+    padding-top:50px;
+    padding-bottom:50px;
+}
+
+.members {
     display:flex;
-    justify-content:space-evenly;
+    justify-content:center;;
     flex-wrap:wrap;
-    margin-top:40px;
     margin-bottom:40px;
+    gap: 40px 0px;
 }
 
 .member-profile {
     text-align:center;
-    width:auto;
-    flex-grow:0;
-    max-width:auto;
-}
-
-.member-profile h2 {
-    background-color:var(--navy);
-    font-size:30px;
-    color:white;
-    margin:0px;
-    margin-top:10px;
+    font-size:0px;
+    flex-basis:25%;
 }
 
 .avatar {
-    max-height:300px;
+    height:350px;
+    width:350px;
+    object-fit:cover;
+    /* z-index:1; */
 }
 
-.avatar img {
-    max-width:300px;
-    object-fit:cover;
+.member-info {
+    font-family:Joy Multiplication;
+    font-size:40px;
+    color:white;
+    margin:5px;
+    /* display:none; */
 }
+
+.member-position{
+    font-family:Joy Multiplication;
+    font-size:20px;
+    color:white;
+    margin:0px;
+    /* z-index:-1; */
+}
+
+/* .avatar:hover ~ .member-position{
+    position:relative;
+    top:0px;
+    transition:top 0.3s ease-in-out;
+    /* transition:font-size 0.3s ease-in-out;
+}*/
+
+
+/* .avatar:hover{
+    filter:brightness(30%);
+    transition:filter 0.3s ease-in-out;
+} */
+
+/* .avatar:hover ~ .member-info {
+    color:blue;
+    visibility:visible;
+    display:block;
+} */
