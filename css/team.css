@@ -16,8 +16,8 @@
     display:flex;
     justify-content:center;;
     flex-wrap:wrap;
-    margin-bottom:40px;
     gap: 40px 0px;
+    padding-bottom:40px;
 }
 
 .member-profile {
