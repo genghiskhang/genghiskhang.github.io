@@ -5,104 +5,71 @@ header {
     margin:0px;
     padding:0px;
     z-index:1;
-    /* flex-wrap:wrap; */
     background-color:var(--navbarcolor);
 }
 
-#team-name, #team-number {
-    transition:0.2s;
+#team-title {
+    margin:0px;
 }
 
-#titlelink{
+#home-link{
     text-decoration:none;
     margin-left:50px;
 }
 
-.team-group {
+#team-group {
     display:flex;
-    /* margin-left:50px; */
 }
 
-.team{
+#team-logo {
+    margin:20px;
+    margin-left:0px;
+    margin-right:0px;
+    max-height:150px;
+    transition:0.2s;
+}
+
+#team-title{
     margin:20px;
     margin-left:0px;
 }
 
-.team h1 {
+#team-name {
     font-family:Joy Multiplication;
     font-size:3vw;
     color:white;
     margin-top:20px;
     margin-bottom:0px;
+    transition:0.2s;
 }
 
-.team p {
+#team-number {
     font-family:Joy Multiplication;
     font-size:2vw;
     color:white;
     margin:0px;
+    transition:0.2s;
 }
 
-.socials {
-    margin:0px;
-}
-
-.navbar {
+#navbar {
     margin:auto;
     margin-right:100px;
     transition:0.2s;
-    /* margin-left:auto; */
 }
 
-.navbar ul {
+#navbar-container {
     display:flex;
-    /* justify-content:flex-end; */
-    /* flex:2; */
     list-style:none;
     padding:0px;
     margin:0px;
-    /* margin-right:200px; */
 }
 
-.navbar li {
+.navbar-item {
     font-family:Joy Multiplication;
     font-size:30px;
-    /*display:flex
-    justify-content:center;
-    align-items:center; */
 }
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: var(--navbaractive);
-  width: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown p {
-    font-size:1.5vw;
-    color:white;
-    padding:15px;
-    margin:0px;
-}
-
-.dropdown p:hover {
-    background-color:#666666;
-    /* transition:background-color 0.3s ease-in-out; */
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.navbar a {
+.navbar-link {
     font-family:Joy Multiplication;
     display:flex;
     align-items: center;
@@ -113,24 +80,35 @@ header {
     padding:15px;
 }
 
-.navbar a:hover {
+.navbar-link:hover {
     background-color:#666666;
-    /* transition:background-color 0.3s ease-in-out; */
 }
-/* .teamname h1 {
-    display:flex;
-    align-items:center;
-    font-size:30px;
-    color:var(--navbartext);
-    margin:0px;
-    margin-left:200px;
-    flex:1;
-} */
 
-#logo {
-    margin:20px;
-    margin-left:0px;
-    margin-right:0px;
-    max-height:150px;
-    transition:0.2s;
+#dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+#dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--navbaractive);
+  width: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+#dropdown-text {
+    font-size:1.5vw;
+    color:white;
+    padding:15px;
+    margin:0px;
+}
+
+#dropdown-text:hover {
+    background-color:#666666;
+}
+
+#dropdown:hover #dropdown-content {
+  display: block;
 }
