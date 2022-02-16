@@ -33,7 +33,7 @@ body {
     background-color:white;
     max-width:100%;
     min-height:1000px;
-    padding:20px;
+    padding:0px;
 }
 
 .main h1 {
@@ -51,18 +51,24 @@ body {
 }
 
 .parallax {
-  background-image: url("../assets/global/standin.gif");
-  filter:grayscale(100%) brightness(30%);
-  min-height: 500px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-image: url("../assets/global/background.gif");
+    /* filter:brightness(80%); */
+    min-height: 49vw;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.spnsr-text h1 {
-    margin-bottom:30px;
+#welcome {
+    font-family:Joy Multiplication;
+    font-size:100px;
+    color:white;
+    margin:0px;
+    text-align:center;
+    vertical-align:center;
 }
+
 
 #active-page {
     background-color:var(--navbaractive);
