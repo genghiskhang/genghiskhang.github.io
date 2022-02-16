@@ -1,18 +1,3 @@
-/* .member-main {
-    padding-top:190px;
-    background-color:var(--mainbackground);
-}
-
-.member-title {
-    font-family:Joy Multiplication;
-    color:white;
-    text-align:center;
-    font-size:70px;
-    margin:0px;
-    padding-top:50px;
-    padding-bottom:50px;
-} */
-
 .members {
     display:flex;
     justify-content:center;
@@ -31,7 +16,6 @@
     height:350px;
     width:350px;
     object-fit:cover;
-    /* z-index:1; */
 }
 
 .member-info {
@@ -39,7 +23,6 @@
     font-size:40px;
     color:white;
     margin:5px;
-    /* display:none; */
 }
 
 .member-position{
@@ -47,24 +30,4 @@
     font-size:20px;
     color:white;
     margin:0px;
-    /* z-index:-1; */
 }
-
-/* .avatar:hover ~ .member-position{
-    position:relative;
-    top:0px;
-    transition:top 0.3s ease-in-out;
-    /* transition:font-size 0.3s ease-in-out;
-}*/
-
-
-/* .avatar:hover{
-    filter:brightness(30%);
-    transition:filter 0.3s ease-in-out;
-} */
-
-/* .avatar:hover ~ .member-info {
-    color:blue;
-    visibility:visible;
-    display:block;
-} */
