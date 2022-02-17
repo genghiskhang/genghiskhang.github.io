@@ -15,6 +15,11 @@
 }
 
 @font-face {
+    font-family:Lato;
+    src:url('../assets/fonts/lato.ttf');
+}
+
+@font-face {
     font-family:Neuterous;
     src:url('../assets/fonts/neuterous.ttf');
 }
@@ -30,6 +35,7 @@ body {
 }
 
 #main {
+    min-height:800px;
     padding-top:190px;
     background-color:var(--mainbackground);
     padding-bottom:60px;

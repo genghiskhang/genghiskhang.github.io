@@ -1,0 +1,27 @@
+#contact-subtitle {
+    font-family:Lato;
+    font-size:30px;
+    color:white;
+    text-align:center;
+    margin:0px;
+    padding:0px;
+    margin-bottom:9vw;
+    margin-top:-50px;
+}
+
+#contacts {
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    flex-wrap:wrap;
+    margin-top:50px;
+}
+
+.contact {
+    width:200px;
+}
+
+.contact:hover {
+    transform:scale(1.1);
+    transition:transform 0.2s ease-in-out;
+}
