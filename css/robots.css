@@ -21,7 +21,6 @@
 
 .robot-img {
     flex-grow:0;
-
     height:500px;
     width:500px;
     object-fit:cover;
@@ -45,6 +44,7 @@
 
 .reverse {
     flex-direction:row-reverse;
+    text-align:right;
 }
 
 /* .spnsr-img {
