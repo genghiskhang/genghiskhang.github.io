@@ -8,8 +8,8 @@ function createAvatars() {
         for (var i = 0; i < memberList.length; i++) {
             console.log(memberList);
             $('.members').append('<div class="member-profile">' +
-                                    // '<img class="avatar" src="../assets/member-avatars/default-avatar.jpg">' +
-                                    `<img class="avatar" src="../assets/member-avatars/${memberList[i].split('-')[0].split(' ')[0].toLowerCase() + memberList[i].split('-')[0].split(' ')[1][0].toLowerCase()}.jpg">` +
+                                    '<img class="avatar" src="../assets/member-avatars/default-avatar.jpg">' +
+                                    // `<img class="avatar" src="../assets/member-avatars/${memberList[i].split('-')[0].split(' ')[0].toLowerCase() + memberList[i].split('-')[0].split(' ')[1][0].toLowerCase()}.jpg">` +
                                     `<h1 class="member-info">${memberList[i].split('-')[0].trim()}</h1>` +
                                     `<h2 class="member-position">${memberList[i].split('-')[1].trim()}</h2>` +
                                  '</div>');

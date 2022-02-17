@@ -2,7 +2,7 @@
     display:flex;
     justify-content:center;
     flex-wrap:wrap;
-    gap: 40px 0px;
+    gap: 60px 0px;
     padding-bottom:40px;
 }
 
@@ -19,8 +19,9 @@
 }
 
 .member-info {
+    padding-top:10px;
     font-family:Joy Multiplication;
-    font-size:40px;
+    font-size:35px;
     color:white;
     margin:5px;
 }

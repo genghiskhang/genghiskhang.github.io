@@ -68,9 +68,3 @@ body {
     text-align:center;
     vertical-align:center;
 }
-
-
-#active-page {
-    background-color:var(--navbaractive);
-    color:var(--navbartext);
-}

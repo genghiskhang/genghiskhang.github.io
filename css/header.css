@@ -112,3 +112,8 @@ header {
 #dropdown:hover #dropdown-content {
   display: block;
 }
+
+#active-page {
+    background-color:var(--navbaractive);
+    color:var(--navbartext);
+}
