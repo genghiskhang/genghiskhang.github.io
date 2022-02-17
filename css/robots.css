@@ -1,4 +1,51 @@
+#robots {
+    display:flex;
+    flex-wrap:wrap;
+    gap:100px 0px;
+}
 
+.robot-link {
+    text-decoration:none;
+}
+
+.robot-link:hover {
+    background-color:#505050;
+}
+
+.robot-container {
+    display:flex;
+    margin-left:200px;
+    margin-right:200px;
+    gap:0px 50px;
+}
+
+.robot-img {
+    flex-grow:0;
+
+    height:500px;
+    width:500px;
+    object-fit:cover;
+}
+
+.robot-label {
+    flex:1;
+}
+
+.robot-year {
+    font-family:Joy Multiplication;
+    font-size:50px;
+    color:white;
+}
+
+.robot-description {
+    font-family:'Lato', Helvetica, sans-serif;
+    font-size:30px;
+    color:white;
+}
+
+.reverse {
+    flex-direction:row-reverse;
+}
 
 /* .spnsr-img {
     flex-basis:33%;
