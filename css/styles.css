@@ -32,7 +32,7 @@ body {
 #main {
     padding-top:190px;
     background-color:var(--mainbackground);
-    padding-bottom:50px;
+    padding-bottom:60px;
 }
 
 #title {
@@ -41,8 +41,8 @@ body {
     text-align:center;
     font-size:70px;
     margin:0px;
-    padding-top:50px;
-    padding-bottom:50px;
+    padding-top:80px;
+    padding-bottom:80px;
 }
 
 .center {
@@ -53,7 +53,6 @@ body {
 
 .parallax {
     background-image: url("../assets/global/background.gif");
-    /* filter:brightness(80%); */
     min-height: 49vw;
     background-attachment: fixed;
     background-position: center;
