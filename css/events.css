@@ -1,0 +1,32 @@
+#events {
+    display:flex;
+    justify-content:center;
+}
+
+.event {
+    display:flex;
+    flex-direction:column;
+    max-width:300px;
+    border:5px solid black;
+    text-decoration:none;
+}
+
+.event-date {
+    font-family:Lato;
+    font-size:30px;
+    color:white;
+    text-align:center;
+}
+
+.event-description {
+    font-family:Lato;
+    font-size:20px;
+    color:white;
+    padding-left:10px;
+}
+
+.event:hover {
+    background-color:#505050;
+    transform:scale(1.05);
+    transition:transform 0.2s ease-in-out;
+}
