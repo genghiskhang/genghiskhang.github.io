@@ -1,6 +1,6 @@
-Mr. Holmes - Lead Mentor
-Mr. Gardner - Mentor
-Mr. David - Mentor
+Joshua Holmes - Lead Mentor
+Francis Gardner - Mentor
+David Lillibridge - Mentor
 Amogh Kashyap - Team Captain
 Ryan Bennett - Mechanical Lead
 Khang Le - Control Lead
