@@ -29,7 +29,6 @@
     font-family:Lato;
 }
 
-/* Header */
 header {
     margin:0vw;
     padding:0vw;
@@ -65,29 +64,26 @@ header {
     text-align:center;
     opacity:100;
     transition:opacity 2s;
-    padding:24vw;
+    padding:19vw;
     color:white;
 }
 
 #name {
     font-family:Sabrina;
     font-size:6vw;
-    /* -webkit-text-stroke-width:0.1vw;
-    -webkit-text-stroke-color:black; */
 }
 
 #socials {
 
 }
 
-.socials-icon {
+.socials-item {
     background-color:white;
     position:relative;
     width:2vw;
 }
 
 #about {
-    /* background-color:#124000; */
     padding:4vw;
 }
 
