@@ -34,12 +34,16 @@
     scroll-behavior:smooth;
 }
 
-#main {
-    margin-left:10vw;
+nav {
+    position:fixed;
+    display:flex;
+    flex-direction:column;
+    background-color:var(--navbar-blue);
+    height:100%;
+    gap:1vw;
 }
 
 #navbar {
-    position:fixed;
     display:flex;
     flex-direction:column;
     list-style-type:none;
@@ -67,6 +71,14 @@
 .navbar-link:hover {
     background-color:var(--navbar-blue-light);
     transition:background-color 0.2s ease-in;
+}
+
+#logo {
+    max-width:10vw;
+}
+
+#main {
+    margin-left:10vw;
 }
 
 #header {
