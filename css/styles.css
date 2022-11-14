@@ -34,13 +34,35 @@
     scroll-behavior:smooth;
 }
 
+h1 {
+    text-align:center;
+    font-size:2vw;
+}
+
+h2 {
+    font-size:1.4vw;
+}
+
+h3 {
+    font-size:1vw;
+}
+
+li {
+    font-size:0.85vw;
+}
+
+a {
+    font-size:0.85vw;
+}
+
 nav {
     position:fixed;
     display:flex;
     flex-direction:column;
     background-color:var(--navbar-blue);
     height:100%;
-    gap:1vw;
+    gap:3vw;
+    min-width:10vw;
 }
 
 #navbar {
@@ -52,12 +74,12 @@ nav {
     background-color:var(--navbar-blue);
 }
 
-.navbar-item {
+/* .navbar-item {
     width:auto;
     height:auto;
     text-align:center;
     border:0.1vw solid red;
-}
+} */
 
 .navbar-link {
     text-align:center;
@@ -110,10 +132,6 @@ nav {
     background-color:white;
     position:relative;
     width:2vw;
-}
-
-h1 {
-    text-align:center;
 }
 
 #about {
