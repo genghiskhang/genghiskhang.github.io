@@ -72,6 +72,13 @@ nav {
     height:100%;
     gap:3vw;
     min-width:10vw;
+    left:-10vw;
+    transition:left 0.5s ease-in-out;
+}
+
+.open {
+    left:0vw;
+    transition:left 0.5s ease-in-out;
 }
 
 #navbar {
@@ -106,10 +113,6 @@ nav {
 
 #logo {
     max-width:10vw;
-}
-
-#main {
-    margin-left:10vw;
 }
 
 #header {
