@@ -172,8 +172,8 @@ nav {
     border:0.3vw solid red;
 }
 
-#boop {
-    display:hidden;
+.collapse {
+    display:none;
 }
 
 #skills {

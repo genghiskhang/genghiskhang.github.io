@@ -1,11 +1,8 @@
-function collapse(event) {
-    if ($(".collapse").hasClass("close")) {
-        $(".collapse").css("display", "block");
-        $(".collapse").removeClass("close");
+$(".experience-item").on("click", function() {
+    if ($(this).find(".experience-body").hasClass("collapse")) {
+        $(this).find(".experience-body").removeClass("collapse");
     }
     else {
-        $(".collapse").css("display", "none");
-        $(".collapse").addClass("close");
+        $(this).find(".experience-body").addClass("collapse");
     }
-    console.log($("#boop").css("display"));
-}
+});
