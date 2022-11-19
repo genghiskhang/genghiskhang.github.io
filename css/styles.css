@@ -43,9 +43,15 @@
     scroll-behavior:smooth;
 }
 
+hr {
+    background-color:#cfcfcf;
+    margin:2vh;
+    width:100%;
+}
+
 h1 {
     text-align:center;
-    font-size:2vw;
+    font-size:6vw;
 }
 
 h2 {
@@ -116,8 +122,11 @@ nav {
 }
 
 #header {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
     margin:0vw;
-    padding:0vw;
     background-color:var(--navy);
 }
 
@@ -125,7 +134,6 @@ nav {
     font-family:Lato;
     font-size:3vw;
     text-align:center;
-    padding:19vw;
     color:white;
     animation:fadeIn ease 2s;
 }
@@ -157,6 +165,17 @@ nav {
     padding:4vw;
 }
 
+.experience-item {
+    cursor:pointer;
+    margin-top:2vw;
+    padding:2vw;
+    border:0.3vw solid red;
+}
+
+#boop {
+    display:hidden;
+}
+
 #skills {
     padding:4vw;
 }
@@ -168,3 +187,27 @@ nav {
 #contact {
     padding:4vw;
 }
+
+/* .text {
+    height: 100px;
+    overflow: hidden;
+}
+.container {
+    position: relative;
+}
+label {
+    position: absolute;
+    top: 100%;
+}
+input {
+    display: none;
+}
+label:after {
+    content: "Show More";
+}
+input:checked + label:after {
+    content: "Show Less";
+}
+input:checked ~ div {
+    height: 100%;
+} */
