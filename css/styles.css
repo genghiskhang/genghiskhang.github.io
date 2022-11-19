@@ -18,6 +18,15 @@
     src:url('../assets/fonts/sabrina.otf');
 }
 
+@keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
 :root {
     --navy:#030040;
     --navy-light:#252262;
@@ -113,10 +122,9 @@ nav {
     font-family:Lato;
     font-size:3vw;
     text-align:center;
-    opacity:100;
-    transition:opacity 2s;
     padding:19vw;
     color:white;
+    animation:fadeIn ease 2s;
 }
 
 #name {
