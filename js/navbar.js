@@ -1,25 +1,38 @@
-// window.onscroll = function(event) {
-//     // console.log(document.body.scrollTop);
-//     console.log(document.documentElement.scrollTop);
-// };
-
 $(document).on("scroll", function(event) {
-    // console.log(document.documentElement.scrollTop);
-    // console.log($(".navbar-link").length);
-    // console.log($(".navbar-link").offset().top);
-    // console.log($(document));
     var top = document.documentElement.scrollTop;
-    console.log($("#about").offset().top);
-    // if (top >= $("#about").offset().top())
+
+    // console.log($(".navbar-link").get(0).id);
+
+    // title
+    if (top < $("#about").offset().top) {
+        $(".navbar-link").get(0).id = "";
+    }
+    // about
+    else if (top >= $("#about").offset().top && top < $("#experience").offset().top)  {
+        $(".navbar-link").get(0).id = "active";
+        $(".navbar-link").get(1).id = "";
+    }
+    // experience
+    else if (top >= $("#experience").offset().top && top < $("#projects").offset().top) {
+        $(".navbar-link").get(0).id = "";
+        $(".navbar-link").get(1).id = "active";
+        $(".navbar-link").get(2).id = "";
+    }
+    // projects
+    else if (top >= $("#projects").offset().top && top < $("#skills").offset().top) {
+        $(".navbar-link").get(1).id = "";
+        $(".navbar-link").get(2).id = "active";
+        $(".navbar-link").get(3).id = "";
+    }
+    // skills
+    else if (top >= $("#skills").offset().top && top < $("#contact").offset().top) {
+        $(".navbar-link").get(2).id = "";
+        $(".navbar-link").get(3).id = "active";
+        $(".navbar-link").get(4).id = "";
+    }
+    // contact
+    else if (top >= $("#contact").offset().top) {
+        $(".navbar-link").get(3).id = "";
+        $(".navbar-link").get(4).id = "active";
+    }
 });
-// document.onmousemove = function (event) {
-//     var mouseX = event.clientX;
-//     var winWidth = document.documentElement.clientWidth;
-    
-//     if (mouseX <= Math.ceil(winWidth/10)) {
-//         $("nav").addClass("open");
-//     }
-//     else {
-//         $("nav").removeClass("open");
-//     }
-// }

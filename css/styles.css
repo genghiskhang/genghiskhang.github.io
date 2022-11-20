@@ -139,22 +139,11 @@ nav {
     color:white;
     font-size:2vw;
     transition:color 0.5s;
-    /* font-size:1vw; */
-    /* padding: */
-    /* max-width:200px; */
-    /* flex-basis:20%; */
-    /* height:auto; */
-    /* flex:2; */
-    /* max-width:10vw; */
 }
 
 #navbar-name:hover {
     color:yellow;
     transition:color 0.5s;
-}
-
-#top {
-
 }
 
 #header {
@@ -177,16 +166,6 @@ nav {
 #name {
     font-family:Sabrina;
     font-size:6vw;
-}
-
-#socials {
-
-}
-
-.socials-item {
-    background-color:white;
-    position:relative;
-    width:2vw;
 }
 
 #about {
