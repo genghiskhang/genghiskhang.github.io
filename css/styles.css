@@ -234,7 +234,7 @@ nav {
     justify-content:center;
     align-items:center;
     flex-wrap:wrap;
-    gap:5vh 5vw;
+    gap:4vh 5vw;
     margin-left:auto;
     margin-right:auto;
     width:75%;
@@ -242,18 +242,17 @@ nav {
 }
 
 .skills-item {
-    padding:0vh 0.5vw;
     display:flex;
     justify-content:center;
     align-items:center;
     flex-direction:column;
     gap:1vh;
     width:10vw;
-    height:12.5vh;
+    height:10vh;
     text-align:center;
     border-radius:1vw;
-    background-color:#DDD;
-    color:black;
+    background-color:#DDD; /*4657A3 415094*/
+    color:black; /*black*/
     transition:background-color 0.3s, color 0.3s;
 }
 
@@ -269,7 +268,7 @@ nav {
 }
 
 .skills-icon {
-    max-height:5vh;
+    max-height:4vh;
 }
 
 #contact {
