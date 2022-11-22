@@ -77,6 +77,7 @@ nav {
     height:4vw;
     transition:left 0.5s ease-in-out;
     background-color:var(--navbar-blue);
+    z-index:1;
 }
 
 #navbar {
@@ -253,14 +254,17 @@ nav {
     border-radius:1vw;
     background-color:#DDD; /*4657A3 415094*/
     color:black; /*black*/
-    transition:background-color 0.3s, color 0.3s;
+    opacity:0;
+    transform:translateY(-3vh);
+    transition:opacity 0.5s, transform 0.5s;
 }
 
-/* .skills-item:hover {
-    background-color:#2c3470;
-    color:white;
-    transition:background-color 0.3s, color 0.3s;
-} */
+.skills-item-fade {
+    opacity:100;
+    transform:translateY(0);
+    transition:opacity 0.5s, transform 0.5s;
+
+}
 
 .skills-item p {
     font-family:JoyMultiplication;
