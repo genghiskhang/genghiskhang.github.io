@@ -214,10 +214,8 @@ nav {
     margin-top:2vw;
     padding:2vw;
     border:0.3vw solid red;
-}
-
-.collapse {
-    display:none;
+    transition:transform 0.5s;
+    transform:rotate(0deg);
 }
 
 #projects {
