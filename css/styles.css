@@ -212,12 +212,39 @@ nav {
 .experience-item {
     margin-top:2vw;
     padding:2vw;
-    border:0.3vw solid red;
+    background-color:#DDD;
+    border-radius:1vw;
     cursor:pointer;
+}
+
+.experience-header {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.dropdown-triangle {
+    width:0; 
+    height:0; 
+    border-left:1vw solid transparent;
+    border-right:1vw solid transparent;
+    border-top:3vh solid black;
+    transform:rotate(0deg);
+    transition:transform 0.5s;
+}
+
+.flip {
+    transform:rotate(180deg);
+    transition:transform 0.5s;
 }
 
 .experience-body {
     display:none;
+}
+
+.experience-body ul {
+    margin-top:3vh;
+    list-style-type:none;
 }
 
 #projects {
