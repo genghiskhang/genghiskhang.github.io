@@ -276,6 +276,7 @@ nav {
     background-color:var(--navy-light);
     border-radius:1em;
     cursor:pointer;
+    color:white;
 }
 
 .experience-header {
