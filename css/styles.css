@@ -27,37 +27,14 @@
     }
 }
 
-@keyframes headerGradient {
-    0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
 :root {
     --navy:#030040;
     --navy-light:#252262;
-    --grey:#242424;
-    --grey-light:#383838;
     --navbar-blue:#363b5e;
     --navbar-blue-light:#404882;
-
-    --black-palette1:#011627;
-    --red-palette1:#FF3366;
-    --teal-palette1:#2EC4B6;
-    --white-palette1:#F6F7F8;
-    --blue-palette1:#20A4F3;
-
-    --blue-dark-palette2:#242582;
-    --blue-palette2:#2F2FA2;
-    --red-palette2:#F64C72;
-    --purple-dark-palette2:#553D67;
-    --purple-light-palette2:#99738E;
+    --blue-dark-palette:#242582;
+    --blue-palette:#2F2FA2;
+    --red-palette:#F64C72;
 }
 
 * {
@@ -75,7 +52,6 @@ hr {
 h1 {
     text-align:center;
     font-size:6em;
-    color:black;
 }
 
 h2 {
@@ -91,14 +67,22 @@ li {
 }
 
 a {
-    font-size:0.85vw;
+    font-size:0.85em;
 }
 
 nav {
+    background-color:var(--navy-light);
+    position:fixed;
+    width:100vw;
+    height:5vh;
+    z-index:2;
+}
+
+#navbar-desktop {
     position:fixed;
     display:flex;
     justify-content:center;
-    gap:50vw;
+    gap:60em;
     width:100%;
     height:5em;
     transition:left 0.5s ease-in-out;
@@ -124,14 +108,14 @@ nav {
 }
 
 .navbar-link:hover {
-    color:var(--red-palette2);
-    border-bottom:1px solid var(--red-palette2);
+    color:var(--red-palette);
+    border-bottom:1px solid var(--red-palette);
     transition:background-color 0.2s, color 0.2s, border-bottom 0.2s;
 }
 
 #active {
-    color:var(--red-palette2);
-    border-bottom:1px solid var(--red-palette2);
+    color:var(--red-palette);
+    border-bottom:1px solid var(--red-palette);
     transition:background-color 0.2s, color 0.2s, border-bottom 0.2s;
 }
 
@@ -147,8 +131,49 @@ nav {
 }
 
 #navbar-name:hover {
-    color:var(--red-palette2);
+    color:var(--red-palette);
     transition:color 0.5s;
+}
+
+#navbar-mobile {
+    height:100%;
+    display:flex;
+    justify-content:right;
+    align-items:center;
+}
+
+#ham-menu {
+    height:95vh;
+    width:100vw;
+    top:5vh;
+    display:none;
+    position:fixed;
+    background-color:var(--navy-light);
+    z-index:2;
+}
+
+#ham-menu-icon {
+    margin-right:1em;
+    font-size:4em;
+    color:white;
+}
+
+#navbar-m {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding-top:5em;
+    gap:1em;
+}
+
+.navbar-mobile-link {
+    width:100vw;
+    text-align:center;
+    color:white;
+    text-decoration:none;
+    font-size:5em;
+    padding:1em;
+    border-bottom:5px solid var(--red-palette);
 }
 
 #header {
@@ -174,7 +199,7 @@ nav {
 }
 
 #about {
-    padding:6rem 15rem 0rem 15rem;
+    padding:6rem 10rem 0rem 10rem;
 }
 
 #about-body {
@@ -184,25 +209,24 @@ nav {
 
 #about-image-container {
     display:flex;
-    justify-content:flex-end;
     flex-basis:50%;
+    justify-content:right;
 }
 
 #about-image {
     border-radius:50%;
-    max-width:100%;
-    height:20vw;
-    width:20vw;
+    height:20em;
+    width:20em;
 }
 
 .divider {
-    width:0.1em;
+    width:3px;
     background-color:#DDD;
 }
 
 #about-description-container {
     flex-basis:50%;
-    display:flex;
+    display:flex-start;
     align-items:center;
 }
 
@@ -237,13 +261,13 @@ nav {
 }
 
 #resume:hover {
-    color:var(--red-palette2);
+    color:var(--red-palette);
     background-position:0% 0%;
     transition:background 0.5s, color 0.5s;
 }
 
 #experience {
-    padding:6rem 15rem 0rem 15rem;
+    padding:6rem 10rem 0rem 10rem;
     color:white;
 }
 
@@ -266,7 +290,7 @@ nav {
     height:0; 
     border-left:15px solid transparent;
     border-right:15px solid transparent;
-    border-top:25px solid var(--red-palette2);
+    border-top:25px solid var(--red-palette);
     transform:rotate(0deg);
     transition:transform 0.5s;
 }
@@ -286,7 +310,7 @@ nav {
 }
 
 #projects {
-    padding:6rem 15rem 0rem 15rem;
+    padding:6rem 10rem 0rem 10rem;
 }
 
 #projects-body {
@@ -323,7 +347,7 @@ nav {
     left:0;
     background-color:rgba(37, 34, 98, 0.8); /*#252262*/
     font-size:2em;
-    color:var(--red-palette2);
+    color:var(--red-palette);
     visibility:none;
     opacity:0;
     transition:opacity 0.5s;
@@ -336,7 +360,7 @@ nav {
 }
 
 #skills {
-    padding:6rem 15rem 0rem 15rem;
+    padding:6rem 10rem 0rem 10rem;
 }
 
 #skills-list {
@@ -371,7 +395,7 @@ nav {
 
 .skills-item:hover {
     background-color:var(--navbar-blue-light);
-    color:var(--red-palette2);
+    color:var(--red-palette);
     transition:color 0.5s, background-color 0.5s;
 }
 
@@ -391,7 +415,7 @@ nav {
 }
 
 #contact {
-    padding:6rem 15rem 0rem 15rem;
+    padding:6rem 10rem 0rem 10rem;
 }
 
 footer {

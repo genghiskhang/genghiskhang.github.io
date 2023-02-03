@@ -1,7 +1,18 @@
 // Spacing
 $(document).ready(function() {
-    var lastSection = $($("main").children()[$("main").children().length - 1]).css({"paddingBottom":"6rem"});
-    console.log(lastSection);
+    $($("main").children()[$("main").children().length - 1]).css({"paddingBottom":"6rem"});
+
+    // Mobile Navbar
+    $($(".navbar-mobile-link")[0]).css({"borderTop":"5px solid #F64C72"});
+    if ($(window).height() > $(window).width()) {
+        $("#navbar-desktop").hide();
+        $("#navbar-mobile").show();
+    }
+    else {
+        $("#navbar-desktop").show();
+        $("#navbar-mobile").hide();
+    }
+
 });
 
 // Navbar
@@ -40,6 +51,14 @@ $(document).on("scroll", function(event) {
             $(".navbar-link").get(0).id = "active";
         }
     }
+});
+
+$("#ham-menu-icon").on("click", function() {
+    $("#ham-menu").slideToggle();
+});
+
+$(".navbar-mobile-link").on("click", function() {
+    $("#ham-menu").slideToggle();
 });
 
 // Experience
